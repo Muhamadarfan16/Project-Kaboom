@@ -1,0 +1,572 @@
+* {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Monda', sans-serif;
+}
+
+.wrapper {
+    width: 1200px;
+    margin: auto;
+    position: relative;
+}
+
+.logo {
+    margin-top: 15px;
+    align-content: center;
+    float: left;
+}
+
+/* Navbar */
+.menu {
+    float: right;
+}
+
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 28px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background: white;
+    z-index: 1;
+    border-bottom: 3px solid whitesmoke;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-top: 20px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    color: #0d2851;
+    display: inline-block;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+}
+
+.cool-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #0d2851;
+    transition: width .3s
+}
+
+.cool-link:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+/* End Navbar */
+
+section {
+    background-color: white;
+    margin: auto;
+    display: flex;
+}
+
+.kolom {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.kolom .deskripsi {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'comic sans ms';
+    color: #0d2851;
+}
+
+p {
+    margin: 10px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
+}
+
+h2 {
+    font-family: 'comic sans ms';
+    font-weight: 500;
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #0d2851;
+    width: 100%;
+    line-height: 50px;
+}
+
+.gambar {
+    padding-left: 100px;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: capitalize;
+    overflow: hidden;
+    letter-spacing: 1px;
+}
+a.tbl-biru {
+    background: w;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 10px 20px 10px 20px;
+    text-transform: capitalize;
+    color: #0d2851;
+    border: 2px solid #0d2851;
+    cursor: pointer;
+    font-weight: bold;
+    position: relative;
+}
+
+
+a.tbl-biru:hover {
+    background: #0d2851;
+    text-decoration: none;
+    color: white;
+}
+
+section.atas-home {
+    border-bottom: 2px solid rgb(218, 218, 218);
+}
+
+section.body-sec {
+    border-bottom: 2px solid rgb(218, 218, 218);
+}
+
+.tengah {
+    text-align: center;
+    width: 100%;
+}
+
+.testimonials{
+    padding: 40px 0;
+    background: #f1f1f1;
+    color: #0d2851;
+    text-align: center;
+  }
+  .inner{
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+  }
+  
+  .border{
+    width: 160px;
+    height: 5px;
+    background: #0d2851;
+    margin: 26px auto;
+  }
+  
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .col{
+    flex: 33.33%;
+    max-width: 33.33%;
+    box-sizing: border-box;
+    padding: 15px;
+  }
+  .testimonial{
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+  }
+  .testimonial img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  .name{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 20px 0;
+  }
+  .stars{
+    color: #6ab04c;
+    margin-bottom: 20px;
+  }
+  
+  
+  @media screen and (max-width:960px) {
+  .col{
+    flex: 100%;
+    max-width: 80%;
+  }
+  }
+  
+  @media screen and (max-width:600px) {
+  .col{
+    flex: 100%;
+    max-width: 100%;
+  }
+  }
+
+.kerjasama-list {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.kartu-kerjasama {
+    width: 0 auto;
+    margin: 0 auto;
+}
+
+.kartu-kerjasama img {
+    width: 150px;
+}
+
+h1 {
+    color: #0d2851;
+}
+
+#kontak {
+    background: #1b1b1b;
+    padding: 50px 0px 50px 0px;
+    margin-top: 50px;
+}
+
+/* CSS Untuk Footer */
+.footer {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.footer-section {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.footer-section img {
+    width: 150px;
+}
+
+h3 {
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: white;
+    line-height: 50px;
+}
+
+p.font-futer {
+    color: white;
+}
+
+
+/* CSS untuk section Partner */
+.container{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.slick-slide{
+    margin: 0 20px;
+}
+.slick-slide img{
+    width: 100%;
+}
+.slick-slider{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+}
+.slick-list{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-track{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+.slick-slide{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+.slick-slide img{
+    display: block;
+}
+.slick-initialized .slick-slide{
+    display: block;
+}
+/* End of Section Partner */
+
+/* Footer */
+*,*:before,*:after {
+    box-sizing: border-box;
+}
+
+footer {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 50px;
+    color: #fff;
+    background-color: #0d2851;
+}
+h4 {
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.footer > * {
+    flex: 1 100%;
+}
+.footer-left {
+    margin-right: 1.25em;
+    margin-bottom: 2em;
+}
+.footer-left img {
+    width: 50%;
+}
+.footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+.footer li {
+    line-height: 2em;
+}
+.footer a {
+    text-decoration: none;
+}
+.footer-right {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-flow: row wrap;
+}
+.footer-right > * {
+    flex: 1 50%;
+    margin-right: 1.25em;
+}
+.box{
+    margin-top: 20px;
+}
+.box a {
+    color: #999;
+}
+.footer-bottom {
+    text-align: center;
+    color: #999;
+    padding-top: 10px;
+}
+.footer-left p {
+    padding-right: 20%;
+    color: whitesmoke;
+}
+.socials a i {
+    color: white;
+    margin-top: 0;
+    padding: 7px 5px;
+    font-size: 28px;
+}
+i:hover {
+    transform: scale(1.4);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 600px) {
+    .footer-right > * {
+        flex: 1;
+    }
+    .footer-left {
+        flex: 1 0px;
+    }
+    .footer-right {
+        flex: 2 0px;
+    }
+}
+/* End of Section Footer */
+
+/* Start Section Slide Pertama */
+.slider_image{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slidex{
+    width: 20%;
+    transition: 2s;
+}
+
+.slidex img{
+    width: 100%;
+    height: 500px;
+}
+
+/*css for manual slide navigation*/
+
+.navigation-manual{
+    position: absolute;
+    width: 100%;
+    margin-top: -50px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid #0d2851;
+    padding: 3px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background: black;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+
+/*css for automatic navigation*/
+
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 450px;
+}
+
+.navigation-auto div{
+    border: 2px solid white;
+    padding: 3px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: white;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: white;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: white;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background: white;
+}
+/* End of Section Slide Gambar Pertama */
+
+@media screen and (max-width: 991.98px) {
+    .wrapper {
+        width: 95%;
+    }
+    .logo img {
+        display: block;
+        width: 130px;
+        top: 0%;
+        transform: translate(0,0);
+        transition: 1s;
+        margin-left: 160px;
+    }
+    nav .menu {
+        width: 100%;
+        margin: 0;
+    }
+    nav .menu ul {
+        text-align: center;
+        margin: auto;
+        font-size: 15px;
+        line-height: 25px;
+    }
+    nav .menu li {
+        display: inline-block;
+        float: none;
+    }
+    section {
+        display: block;
+    }
+    section img {
+        display: block;
+        width: 100%;
+    }
+    .testimonial img {
+        display: block;
+        display: block;
+        width: 35%;
+        left: 50%;
+        top: 0%;
+        transform: translate(0,0);
+        content: "";
+        transition: 1s;
+        margin-left: 105px;
+        margin-bottom: 2%;
+    }
+
+    /*Pengajar*/
+}
+

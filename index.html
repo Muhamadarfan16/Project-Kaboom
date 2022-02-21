@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico.png">
+    <link href="https://fonts.googleapis.com/css2?family=Monda&display=swap" rel="stylesheet">
+    
+    <!--Boostrap CDN-->
+    <link rel="stylesheet" herf="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/iJTQUOhcWr7x9JvoRxT2MZx1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1c1HTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaff/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+    <!--Slick.js Library-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+
+</head>
+<body>
+  <nav>
+    <div class="wrapper">
+        <div class="logo">
+            <a href="index.html"><img src="img/kaboomfix.png" alt="Logo Kaboom" width="130"></a>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="" class="cool-link">Beranda</a></li>
+                <li><a href="/pelajar.html" class="cool-link">Pelajar</a></li>
+                <li><a href="/pengajar.html" class="cool-link">Pengajar</a></li>
+                <li><a href="/tentangkami.html" class="cool-link">Tentang Kami</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    
+           <!--image slider start-->
+           <div class="slider_image">
+            <div class="slides">
+                <!--radio buttons start-->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <!--radio buttons end-->
+
+                <!--slide images start-->
+                <div class="slidex first">
+                    <img src="1.jpg" alt="">
+                </div>
+                <div class="slidex">
+                    <img src="2.jpg" alt="">
+                </div>
+                <div class="slidex">
+                    <img src="3.jpg" alt="">
+                </div>
+                <div class="slidex">
+                    <img src="4.jpg" alt="">
+                </div>
+                <!--slide images end-->
+                <!--automatic navigation start-->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+                <!--automatic navigation end-->
+            </div>
+            <!--manual navigation start-->
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+            <!--manual navigation end-->
+        </div>
+        <!--image slider end-->
+
+        <script type="text/javascript">
+        var counter = 1;
+        setInterval(function(){
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if(counter > 4){
+                counter = 1;
+            }
+        }, 5000);
+        </script>
+    
+    <div class="wrapper">
+
+        <!-- Section Home -->
+        <section id="home" class="atas-home">
+        <div class="kolom">
+            <p class="deskripsi">Belajar Asik Sambil Bermain</p>
+            <h2>Dirumah Aja, Tetap Sehat</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus atque libero odio vitae voluptatibus quidem?</p>
+            <!-- <section class="tombol"> -->
+            <a href="" class="tbl-biru">Daftar</a>
+            <a href="" class="tbl-biru">Masuk</a>
+        <!-- </section> -->
+        </div>
+        </section>
+        
+        <!-- Untuk Pelajar -->
+        <section id="pelajar" class="body-sec">
+            <div class="kolom">
+                <p class="deskripsi">Kaboom sebagai Pelajar</p>
+                <h2>Belajar Daring</h2>
+                <p class="ppelajar">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam saepe exercitationem magni velit impedit quis, hic illum natus ullam quam libero ipsa quasi distinctio ex officiis mollitia iure voluptatem officia. Laborum autem ratione commodi dignissim</p>
+                <p><a href="" class="tbl-biru">Pelajari Lebih Lanjut</a></p>
+            </div>
+            <img class="gambar" src="img/4151543.jpg"  width="60%" height="10%">
+        </section>
+        
+        <!-- Untuk Pengajar -->
+        <section id="pengajar" class="body-sec">
+            <img class="gambar" src="img/wayang.jpg" width="40%">
+            <div class="kolom">
+                <p class="deskripsi">Belajar Asik Sambil Bermain</p>
+                <h2>Dirumah Aja, Tetap Sehat</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus atque libero odio vitae voluptatibus quidem?</p>
+                <section class="tombol">
+                <a href="" class="tbl-biru">Pelajari Lebih Lanjut</a>
+            </section>
+            </div>
+        </section>
+
+        <!-- Comment People -->
+        <section id="pengguna">
+            <div class="testimonials">
+                <div class="inner">
+                  <h1>Apa Kata Orang</h1>
+                  <div class="border"></div>
+          
+                  <div class="row">
+                    <div class="col">
+                      <div class="testimonial">
+                        <img src="img/org1.jpg" alt="">
+                        <div class="name">Rina</div>
+                        <div class="stars">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+          
+                        <p>
+                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        </p>
+                      </div>
+                    </div>
+          
+                    <div class="col">
+                      <div class="testimonial">
+                        <img src="img/org2.jpg" alt="">
+                        <div class="name">Januar</div>
+                        <div class="stars">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i>
+                          <i class="far fa-star"></i>
+                        </div>
+          
+                        <p>
+                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        </p>
+                      </div>
+                    </div>
+          
+                    <div class="col">
+                      <div class="testimonial">
+                        <img src="img/org1.jpg" alt="">
+                        <div class="name">Natasya</div>
+                        <div class="stars">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i>
+                        </div>
+          
+                        <p>
+                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>
+        
+        <!-- Section Kerja Sama -->
+        <div class="container" id="kerjasamas">
+          <h1 class="text-center font-weight-bold">Kerja Sama Kami</h1>
+          <div class="border"></div>
+          <section class="customer-logos slider">
+            <a href="https://www.ngampooz.com/">
+              <div class="slide"><img src="ngampoozkotak.jpg" alt="logo"></div>
+            </a>
+            <a href="https://www.budiluhur.ac.id/">
+              <div class="slide"><img src="img/logoblgede.png" alt="logo"></div>
+            </a>
+              <div class="slide"><img src="img/instagram.png" alt="logo"></div>
+              <div class="slide"><img src="img/twitter.png" alt="logo"></div>
+              <div class="slide"><img src="img/youtube.png" alt="logo"></div>
+              <div class="slide"><img src="img/instagram.png" alt="logo"></div>
+              <div class="slide"><img src="logo7.png" alt="logo"></div>
+          </section>
+      </div>
+      <script src="script.js"></script>
+    </div>      
+      
+    <footer class="footer">
+      <div class="footer-left">
+        <img src="kaboomfix_putih.png" alt="">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima quidem corrupti exercitationem voluptatem veritatis, maxime fugiat eius.</p>
+        <div class="socials">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <ul class="footer-right">
+        <li>
+          <h4>Produk</h4>
+
+          <ul class="box">
+            <li><a href="#">Tema Design</a></li>
+            <li><a href="#">Plugin Design</a></li>
+            <li><a href="#">Wordpress</a></li>
+            <li><a href="#">HTML CSS</a></li>
+          </ul>
+        </li>
+        
+        <li class="features">
+          <h4>Useful Link</h4>
+
+          <ul class="box">
+            <li><a href="#">Tema Design</a></li>
+            <li><a href="#">Plugin Design</a></li>
+            <li><a href="#">Wordpress</a></li>
+            <li><a href="#">HTML CSS</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <h4>Address</h4>
+
+          <ul class="box">
+            <li><a href="#">Tema Design</a></li>
+            <li><a href="#">Plugin Design</a></li>
+            <li><a href="#">Wordpress</a></li>
+            <li><a href="#">HTML CSS</a></li>
+          </ul>
+        </li> 
+      </ul>
+
+      <div class="footer-bottom">
+        <p>All Right Reserved by &copy;kaboom 2021</p>
+      </div>
+    </footer>
+</body>
+</html>

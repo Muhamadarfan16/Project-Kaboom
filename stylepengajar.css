@@ -1,0 +1,276 @@
+* {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Monda', sans-serif;
+}
+.wrapper {
+    width: 1200px;
+    margin: auto;
+    position: relative;
+}
+.logo {
+    margin-top: 15px;
+    align-content: center;
+    float: left;
+}
+section {
+    background-color: white;
+    margin: auto;
+    display: flex;
+}
+
+/* Navbar */
+.menu {
+    float: right;
+}
+
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 28px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background: white;
+    z-index: 1;
+    border-bottom: 3px solid whitesmoke;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-top: 20px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    color: #0d2851;
+    display: inline-block;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+}
+
+.cool-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #0d2851;
+    transition: width .3s
+}
+
+.cool-link:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+/* End Navbar */
+
+/* Bagian Pertama */
+.bagian_pertama {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(/img/Laboratory\ 06.jpg);
+    width: 100%;
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    font-family: 'Baloo Tammudu 2', cursive;
+}
+.bagian_pertama h1 {
+    margin-top: 7%;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+}
+.bagian_pertama a {
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 2px;
+    letter-spacing: 1px;
+    color: #fff;
+}
+.bagian_pertama p {
+    text-align: center;
+    color: white;
+    font-size: 15px;
+}
+.button {
+    background-color: #00c985;
+    border-bottom: 5px solid #009c68;
+    text-shadow: 0px -2px #2980B9;
+    border-radius: 10px;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    color: #0d2851;
+    cursor: pointer;
+}
+.button:hover {
+    transform: translate(100px, 30px);
+    -webkit-transform: translate(0px, 4px);
+    border-bottom: 1px;
+    transition: 0.5s;
+}
+.bagian_pertama a:hover {
+    cursor: pointer;
+}
+/* End Bagian Pertama */
+
+/* Bagian kedua */
+/* .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.container .box {
+    position: relative;
+    width: 350px;
+    padding: 40px;
+    background: #fff;
+} */
+.manfaat{
+    padding: 40px 0;
+    color: #0d2851;
+    text-align: center;
+    font-family: 'Baloo Tammudu 2', cursive;
+  }
+  .inner{
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+  }
+  
+  .border{
+    width: 160px;
+    height: 5px;
+    background: #0d2851;
+    margin: 26px auto;
+  }
+  
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .col{
+    flex: 33.33%;
+    max-width: 33.33%;
+    box-sizing: border-box;
+    padding: 15px;
+  }
+  .sekat{
+    background: #fff;
+    border-radius: 10px;
+  }
+  .sekat img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  .sekat1 img {
+      width: 100%;
+  }
+  
+  .name{
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .manfaat p {
+      color: grey;
+  }
+  
+  
+  @media screen and (max-width:960px) {
+  .col{
+    flex: 100%;
+    max-width: 80%;
+  }
+  }
+  
+  @media screen and (max-width:600px) {
+  .col{
+    flex: 100%;
+    max-width: 100%;
+  }
+  }
+/* End Bagian kedua */
+
+/* Responsive */
+@media screen and (max-width: 991.98px) {
+    .wrapper {
+        width: 95%;
+    }
+    .logo img {
+        display: block;
+        width: 130px;
+        top: 0%;
+        transform: translate(0,0);
+        transition: 1s;
+        margin-left: 170px;
+        margin-right: 170px;
+    }
+    nav .menu {
+        width: 100%;
+        margin: 0;
+    }
+    nav .menu ul {
+        text-align: center;
+        margin: auto;
+        font-size: 15px;
+        line-height: 25px;
+    }
+    nav .menu li {
+        display: inline-block;
+        float: none;
+    }
+    .bagian_pertama h1 {
+        margin-top: 20%;
+        color: #fff;
+        text-align: center;
+        font-size: 23px;
+    }
+    .bagian_pertama a {
+        font-size: 13px;
+        text-decoration: underline;
+        font-weight: bold;
+        letter-spacing: 1px;
+        display: inline-block;
+        color: #fff;
+    }
+    .bagian_pertama p {
+        padding: auto;
+        text-align: center;
+        color: white;
+        font-size: 13px;
+    }
+    /* button {
+        font-family: 'Monda', sans-serif;;
+        background: #00c985;
+        border-radius: 10px;
+        padding: 15px 25px;
+        text-decoration: none;
+        font-weight: bold;
+        letter-spacing: 1px;
+        margin-top: 5px;
+        display: inline-block;
+        color: #fff;
+    } */
+}
